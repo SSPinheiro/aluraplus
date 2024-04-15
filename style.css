@@ -15,6 +15,11 @@ body {
     font-weight: 400;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .principal {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
@@ -39,9 +44,9 @@ body {
     margin-bottom: 1em;
 }
 
-.container__botao:hover {
-    background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo);
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
 }
 
 .container_aviso {
@@ -49,13 +54,14 @@ body {
     color: var(--cinza-secundario);
 }
 
-.botao_secundario {
-        background-color: transparent;
-}
-
 .container__titulo {
     font-size: 28px;
     font-weight: 700;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
 
 .container__imagem{
@@ -87,12 +93,35 @@ body {
 }
 
 .secundario__botao {
-    display: inline-block;
+    display: inline-block;  
     margin-top: 1em;
 }
 
 .container__descricao{
     padding: 2em;
+}
+
+.container__cursos{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.imagem__cursos{
+    width: 80%;
+}
+
+.container__botao__secundario__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    width: 10em;
+    
 }
 
 .dispositivos__lista {
@@ -145,9 +174,3 @@ body {
     color: var(--cinza-secundario);
     font-size: 14px;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
